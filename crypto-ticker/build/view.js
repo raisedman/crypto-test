@@ -1,0 +1,1 @@
+import{getContext as c,store as t}from"@wordpress/interactivity";t("create-block",{actions:{async fetchPrice(){const t=c();async function e(){try{const c=await fetch("http://localhost:3000/price/bitcoin"),e=await c.json();console.log(e.price),t.price=e.price}catch(c){t.price="error"}}await e(),setInterval(e,6e3)}}});
