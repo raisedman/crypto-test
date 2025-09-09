@@ -16,7 +16,7 @@ store( 'create-block', {
       }
 
       await updatePrice();
-      setInterval(updatePrice, 6000); 
+      setInterval(updatePrice, 60000); 
     }
 	},
 } );
